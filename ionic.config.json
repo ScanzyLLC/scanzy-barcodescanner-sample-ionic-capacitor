@@ -1,0 +1,7 @@
+{
+  "name": "scanzy-barcodescanner-sample-ionic-capacitor",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,31 @@
+ion-list-header {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #92949c;
+}
+ion-list {
+    padding: 0;
+}
+ion-label {
+    p {
+        white-space: initial;
+    }
+}
+.about-container {
+    a {
+        color: inherit;
+        text-decoration: inherit;
+    }
+    padding: 0 !important;
+}
+.toolbar-container {
+    padding: 0 !important;
+}
+.version-container {
+    font-size: .8rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+}
