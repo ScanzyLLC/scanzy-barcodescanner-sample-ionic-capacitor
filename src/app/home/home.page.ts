@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { ActionSheetController, Platform } from '@ionic/angular';
 import { ISettings, SettingsService } from '../services/settings.service';
-import { ScanzyBarcodeOptions } from './scanzy-barcode-options';
 declare var ScanzyBarcodeScanner: any;
+declare var ScanzyBarcodeOptions: any;
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',

@@ -1,5 +1,5 @@
 {
-	"appId": "scanzy-barcodescanner-sample-ionic-capacitor",
+	"appId": "com.scanzy.barcodescanner.sample.ionic.capacitor",
 	"appName": "Scanzy barcodescanner sample based on ionic capacitor",
 	"webDir": "www",
 	"bundledWebRuntime": false,

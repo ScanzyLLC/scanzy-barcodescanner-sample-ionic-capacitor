@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage';
-import { ScanzyBarcodeFormat } from '../home/scanzy-barcode-options';
+declare var ScanzyBarcodeFormat: any;
 export interface ISettings {
   enableBeep: boolean;
   enableVibrate: boolean;
@@ -15,7 +15,7 @@ export interface IBarcode {
 }
 
 export interface IBarcodeType {
-  type: ScanzyBarcodeFormat;
+  type: string;
   value: boolean
 }
 @Injectable()
@@ -35,8 +35,8 @@ export class SettingsService {
             value = <ISettings>({
               enableBeep: true,
               enableVibrate: true,
-              enableScanRectOnly: true,
-              enableAutoZoom: true,
+              enableScanRectOnly: false,
+              enableAutoZoom: false,
               barcode: {
                 '1D': [{type: ScanzyBarcodeFormat.Code128, value: false},{type: ScanzyBarcodeFormat.Code39, value: false}, {type: ScanzyBarcodeFormat.Code93, value: false}, {type: ScanzyBarcodeFormat.CodaBar, value: false}, {type: ScanzyBarcodeFormat.EAN13, value: true}, {type: ScanzyBarcodeFormat.EAN8, value: true},{type: ScanzyBarcodeFormat.ITF, value: false},{type: ScanzyBarcodeFormat.UPCA, value: true},{type: ScanzyBarcodeFormat.UPCE, value: true}],
                 '2D': [{type: ScanzyBarcodeFormat.QRCode, value: true},{type: ScanzyBarcodeFormat.DataMatrix, value: false},{type: ScanzyBarcodeFormat.PDF417, value: false},{type: ScanzyBarcodeFormat.Aztec, value: false}, {type: ScanzyBarcodeFormat.MaxiCode, value: false}]
