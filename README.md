@@ -64,20 +64,19 @@ ionic capacitor run ios
 ionic capacitor run android
 ```
 
-For ios project, in order to get camera permission, please add below configs to the Info.plist of the Project Targets.
+For IOS project, in order to get camera permission, please add below configs to the Info.plist of the Project Targets.
 
 ```xml
 <key>NSCameraUsageDescription</key>
 <string>camera description.</string>
 ```
 
-For android project, you can edit the Android SDK version in the Variables.gradle under Android folder.
+For Android project, you can edit the Android SDK version in the Variables.gradle under Android folder.
+If you meet with error 'Manifest merger failed : Apps targeting Android 12 and higher are required to specify an explicit value for `android:exported` when the corresponding component has an intent filter defined.', please add 'android:exported="true"' to the scanzy activity.
 
-If you meet with error like below, please add 'android:exported="true"' to the scanzy activity.
-Manifest merger failed : Apps targeting Android 12 and higher are required to specify an explicit value for `android:exported` when the corresponding component has an intent filter defined. See https://developer.android.com/guide/topics/manifest/activity-element#exported for details.
 
 Add Splash Screens and Icons:
-Place one icon and one splash screen file in a top-level resources folder within your project, like so:
+First, Place one icon and one splash screen file in a top-level resources folder within your project, like so:
 ```
 resources/
 ├── icon.png
