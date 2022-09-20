@@ -72,7 +72,7 @@ For IOS project, in order to get camera permission, please add below configs to 
 ```
 
 For Android project, you can edit the Android SDK version in the Variables.gradle under Android folder.
-If you meet with error 'Manifest merger failed : Apps targeting Android 12 and higher are required to specify an explicit value for `android:exported` when the corresponding component has an intent filter defined.', please add `android:exported="true"` to the scanzy activity.
+If you meet with error 'Manifest merger failed : Apps targeting Android 12 and higher are required to specify an explicit value for `android:exported` when the corresponding component has an intent filter defined.', please add `android:exported="true"` to the scanzy activity in the AndroidManifest.xml.
 
 
 Add Splash Screens and Icons:
