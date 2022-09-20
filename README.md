@@ -5,8 +5,8 @@ ionic capacitor sample to use cordova-plugin-scanzy-barcodescanner
 
 The following plugins are included:
 
-- [cordova-plugin-scanzy-barcodescanner](https://github.com/ScanzyLLC/cordova-plugin-scanzy-barcodescanner)
-To learn how to install cordova-plugin-scanzy-barcodescanner and use the scan feature, check the above link.
+- [cordova-plugin-scanzy-barcodescanner](https://www.npmjs.com/package/cordova-plugin-scanzy-barcodescanner)
+To learn how to install cordova-plugin-scanzy-barcodescanner and use the scan feature, check our [official documentation](https://developer.scanzy.com)
 
 ## Development Setup 💻
 
@@ -62,4 +62,30 @@ Launch the native app:
 ```
 ionic capacitor run ios
 ionic capacitor run android
+```
+
+For ios project, in order to get camera permission, please add below configs to the Info.plist of the Project Targets.
+
+```xml
+<key>NSCameraUsageDescription</key>
+<string>camera description.</string>
+```
+
+For android project, you can edit the Android SDK version in the Variables.gradle under Android folder.
+
+If you meet with error like below, please add 'android:exported="true"' to the scanzy activity.
+Manifest merger failed : Apps targeting Android 12 and higher are required to specify an explicit value for `android:exported` when the corresponding component has an intent filter defined. See https://developer.android.com/guide/topics/manifest/activity-element#exported for details.
+
+Add Splash Screens and Icons:
+Place one icon and one splash screen file in a top-level resources folder within your project, like so:
+```
+resources/
+├── icon.png
+└── splash.png
+```
+Next, run the following to generate all images then copy them into the native projects:
+```
+npm install -g cordova-res
+cordova-res ios --skip-config --copy
+cordova-res android --skip-config --copy
 ```
