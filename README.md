@@ -12,7 +12,7 @@ To learn how to install cordova-plugin-scanzy-barcodescanner and use the scan fe
 
 ### Prerequisites
 
-- Install [Node.js](https://nodejs.org) which includes [Node Package Manager](https://www.npmjs.com/get-npm), version 14 or higher
+- Install [Node.js v14](https://nodejs.org) or higher, with [Node Package Manager](https://www.npmjs.com/get-npm) v7.24 or higher
 - Android development: Install [Android Studio](https://developer.android.com/studio)
 - iOS development: Install [XCode](https://apps.apple.com/de/app/xcode/id497799835?mt=12)
 - This project uses [Ionic](https://ionicframework.com/) as app development platform and the [Ionic CLI](https://ionicframework.com/docs/cli).
