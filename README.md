@@ -70,17 +70,16 @@ ionic capacitor sync android
 [!] The 'Pods-App' target has transitive dependencies that include statically linked binaries: (/Users/xxx/xxx/scanzy-barcodescanner-sample-ionic-capacitor/ios/App/Pods/ScanzyBarcodeScannerSDK/ScanzyBarcodeScannerSDK.xcframework)
 ```
 * Choose one simulator or local device to run the app.
-
-
+<br>
 #### For Android project, Run the app using the Android Studio:
 * Open the project located in platforms/android using the Android Studio.
 * Select File --> Sync Project with Gradle Files
 * If you meet with sdk version error, you can edit the Android SDK version in the Variables.gradle under Android folder.
-* If you meet with error, add `android:exported="true"` to the scanzy activity in the AndroidManifest.xml.
+* If you meet with below error, add `android:exported="true"` to the scanzy activity in the AndroidManifest.xml.
 ```
 Manifest merger failed : Apps targeting Android 12 and higher are required to specify an explicit value for `android:exported` when the corresponding component has an intent filter defined.
 ```
-
+<br>
 #### How to customize Splash Screens and Icons?
 First, Place one icon and one splash screen file in a top-level resources folder within your project, like so:
 ```
