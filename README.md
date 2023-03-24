@@ -57,25 +57,27 @@ ionic capacitor sync ios
 ionic capacitor sync android
 ```
 
-Launch the native app:
-
-```
-ionic capacitor run ios
-ionic capacitor run android
-```
-
-For IOS project, in order to get camera permission, please add below configs to the Info.plist of the Project Targets.
-
-```xml
+For IOS project, run the app using the Xcode:
+* Open the workspace file ScanzyBarcodeScannerSDKSampleReactNative.xcworkspace (not .xcodeproj) from the ios * directory in Xcode.
+* Adjust Provisioning and Signing settings.
+* In order to get camera permission, please add below configs to the Info.plist of the Project Targets.
+ ```xml
 <key>NSCameraUsageDescription</key>
 <string>camera description.</string>
 ```
+* If you meet with "[!] The 'Pods-App' target has transitive dependencies that include statically linked binaries: (/Users/xxx/xxx/scanzy-barcodescanner-sample-ionic-capacitor/ios/App/Pods/ScanzyBarcodeScannerSDK/ScanzyBarcodeScannerSDK.xcframework)" when running 'ionic capacitor add ios': 
+  Please add 'use_frameworks! :linkage => :static' to the Podfile in /ios/App folder, and then run 'pod install'.
+* Choose one simulator or local device to run the app.
 
-For Android project, you can edit the Android SDK version in the Variables.gradle under Android folder.
-If you meet with error 'Manifest merger failed : Apps targeting Android 12 and higher are required to specify an explicit value for `android:exported` when the corresponding component has an intent filter defined.', please add `android:exported="true"` to the scanzy activity in the AndroidManifest.xml.
+
+For Android project, Run the app using the Android Studio:
+* Open the project located in platforms/android using the Android Studio.
+* Select File --> Sync Project with Gradle Files
+* If you meet with sdk version error, you can edit the Android SDK version in the Variables.gradle under Android folder.
+* If you meet with error 'Manifest merger failed : Apps targeting Android 12 and higher are required to specify an explicit value for `android:exported` when the corresponding component has an intent filter defined.', please add `android:exported="true"` to the scanzy activity in the AndroidManifest.xml.
 
 
-Add Splash Screens and Icons:
+How to customize Splash Screens and Icons?
 First, Place one icon and one splash screen file in a top-level resources folder within your project, like so:
 ```
 resources/
