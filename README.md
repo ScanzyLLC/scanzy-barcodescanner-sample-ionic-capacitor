@@ -57,7 +57,7 @@ ionic capacitor sync ios
 ionic capacitor sync android
 ```
 
-For IOS project, run the app using the Xcode:
+<strong>For IOS project, run the app using the Xcode:</strong>
 * Open the workspace file ScanzyBarcodeScannerSDKSampleReactNative.xcworkspace (not .xcodeproj) from the ios * directory in Xcode.
 * Adjust Provisioning and Signing settings.
 * In order to get camera permission, please add below configs to the Info.plist of the Project Targets.
@@ -73,7 +73,7 @@ For IOS project, run the app using the Xcode:
 * Choose one simulator or local device to run the app.
 
 
-For Android project, Run the app using the Android Studio:
+<strong>For Android project, Run the app using the Android Studio:</strong>
 * Open the project located in platforms/android using the Android Studio.
 * Select File --> Sync Project with Gradle Files
 * If you meet with sdk version error, you can edit the Android SDK version in the Variables.gradle under Android folder.
@@ -84,7 +84,7 @@ Manifest merger failed : Apps targeting Android 12 and higher are required to sp
  Please add `android:exported="true"` to the scanzy activity in the AndroidManifest.xml.
 
 
-How to customize Splash Screens and Icons?
+<strong>How to customize Splash Screens and Icons?</strong>
 First, Place one icon and one splash screen file in a top-level resources folder within your project, like so:
 ```
 resources/
