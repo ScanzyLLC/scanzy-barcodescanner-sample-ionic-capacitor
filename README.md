@@ -65,7 +65,7 @@ ionic capacitor sync android
 <key>NSCameraUsageDescription</key>
 <string>camera description.</string>
 ```
-* If you receive the below error when running 'ionic capacitor add ios', add `use_frameworks! :linkage => :static` to the Podfile in the /ios/App folder, and then run `pod install`.
+* If you experience the below error when running 'ionic capacitor add ios', add `use_frameworks! :linkage => :static` to the Podfile in the /ios/App folder, and then run `pod install`.
 ```
 [!] The 'Pods-App' target has transitive dependencies that include statically linked binaries: (/Users/xxx/xxx/scanzy-barcodescanner-sample-ionic-capacitor/ios/App/Pods/ScanzyBarcodeScannerSDK/ScanzyBarcodeScannerSDK.xcframework)
 ```
