@@ -77,7 +77,11 @@ For Android project, Run the app using the Android Studio:
 * Open the project located in platforms/android using the Android Studio.
 * Select File --> Sync Project with Gradle Files
 * If you meet with sdk version error, you can edit the Android SDK version in the Variables.gradle under Android folder.
-* If you meet with error 'Manifest merger failed : Apps targeting Android 12 and higher are required to specify an explicit value for `android:exported` when the corresponding component has an intent filter defined.', please add `android:exported="true"` to the scanzy activity in the AndroidManifest.xml.
+* If you meet with error:
+```
+Manifest merger failed : Apps targeting Android 12 and higher are required to specify an explicit value for `android:exported` when the corresponding component has an intent filter defined.
+```
+ Please add `android:exported="true"` to the scanzy activity in the AndroidManifest.xml.
 
 
 How to customize Splash Screens and Icons?
