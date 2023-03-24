@@ -65,8 +65,11 @@ For IOS project, run the app using the Xcode:
 <key>NSCameraUsageDescription</key>
 <string>camera description.</string>
 ```
-* If you meet with "[!] The 'Pods-App' target has transitive dependencies that include statically linked binaries: (/Users/xxx/xxx/scanzy-barcodescanner-sample-ionic-capacitor/ios/App/Pods/ScanzyBarcodeScannerSDK/ScanzyBarcodeScannerSDK.xcframework)" when running 'ionic capacitor add ios': 
-  Please add 'use_frameworks! :linkage => :static' to the Podfile in /ios/App folder, and then run 'pod install'.
+* If you meet with below error when running 'ionic capacitor add ios': 
+```
+[!] The 'Pods-App' target has transitive dependencies that include statically linked binaries: (/Users/xxx/xxx/scanzy-barcodescanner-sample-ionic-capacitor/ios/App/Pods/ScanzyBarcodeScannerSDK/ScanzyBarcodeScannerSDK.xcframework)
+```
+  Please add `use_frameworks! :linkage => :static` to the Podfile in /ios/App folder, and then run `pod install`.
 * Choose one simulator or local device to run the app.
 
 
