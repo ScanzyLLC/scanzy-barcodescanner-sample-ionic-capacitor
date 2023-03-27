@@ -1,5 +1,5 @@
 # scanzy-barcodescanner-sample-ionic-capacitor
-ionic capacitor sample to use cordova-plugin-scanzy-barcodescanner
+Ionic capacitor sample to use cordova-plugin-scanzy-barcodescanner
 
 ## Plugins
 
